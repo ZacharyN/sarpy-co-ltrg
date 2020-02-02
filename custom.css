@@ -21,13 +21,13 @@ html {
   .genesis-nav-menu a:focus a :hover, .genesis-nav-menu a:hover a :hover, .genesis-nav-menu .current-menu-item > a a :hover, .genesis-nav-menu .sub-menu .current-menu-item > a:focus a :hover, .genesis-nav-menu .sub-menu .current-menu-item > a:hover a :hover {
     color: #FFDD95; }
 
-/* ------------------------------------------------------------------
-## Paragraph Styles
------------------------------------------------------------------- */
 p {
-  font-family: Raleway, Helvetica, Arial, sans-serif;
-  font-size: 1.15rem;
-  font-weight: 400; }
+  font-family: "Open Sans", sans-serif;
+  color: #101010;
+  font-size: 1rem; }
+
+a {
+  color: #FFB472; }
 
 /* ------------------------------------------------------------------
 ## Images

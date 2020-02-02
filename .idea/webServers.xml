@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="44bc37b4-b5db-4ee4-b2c7-3abc1e976001" name="RI Dev" url="http://68.183.111.60">
+        <fileTransfer host="68.183.111.60" port="22" rootFolder="/srv/users/republicinsights-dev/apps/republicinsights-dev/public/sarpy-ltrg/wp-content/themes/sarpy-co-ltrg" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
