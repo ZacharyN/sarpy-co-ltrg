@@ -4,3 +4,60 @@
 .alignwide {
   margin-bottom: 1.25rem;
 }
+
+/* ------------------------------------------------------------------
+## Footer Elements
+------------------------------------------------------------------ */
+#genesis-footer-widgets {
+  @include nav-background-selector;
+  }
+  a {
+    color: $font-primary;
+    text-decoration: none;
+  }
+
+/* Center Address Block on Mobile and Left Justify on Desktop */
+.footer-widgets-1 {
+  text-align: center;
+  @include mq('tablet-wide') {
+    text-align: left;
+  }
+}
+
+/* Center the PP & TOS */
+.footer-widgets-2 {
+  text-align: center;
+  a {
+    font-size: 0.95rem;
+  }
+}
+
+/* Move the Quick Links title to the right */
+.widget-title {
+  text-align: center;
+  @include mq('tablet-wide') {
+    text-align: right;
+  }
+}
+
+/* Move the list items and remove the extra space between items */
+#menu-footer-navigation li {
+  margin-bottom: 0;
+  text-align:center;
+  a {
+    color: $font-primary;
+    text-decoration: none;
+  }
+  @include mq('tablet-wide') { // Move the text to the right on desktop devices
+    text-align: right;
+  }
+}
+
+footer.site-footer {
+  @include nav-background-selector;
+  border: none;
+  padding: 20px;
+  p {
+    font-size: 12px;
+  }
+}

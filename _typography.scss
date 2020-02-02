@@ -1,12 +1,8 @@
-
-
-
-
 /* ------------------------------------------------------------------
 ## Paragraph Styles
 ------------------------------------------------------------------ */
 p {
-  font-family: Raleway, Helvetica, Arial, sans-serif;
+  font-family: $paragraph-font;
   font-size: 1.15rem;
   font-weight: 400;
 }

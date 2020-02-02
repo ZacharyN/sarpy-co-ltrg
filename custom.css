@@ -8,6 +8,11 @@ html {
   .site-header a :hover {
     color: #FFDD95; }
 
+.genesis-nav-menu a {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.75px; }
+
 .nav-primary .sub-menu a {
   color: #101010;
   background-color: #71BAC0;
@@ -25,7 +30,7 @@ html {
 ## Paragraph Styles
 ------------------------------------------------------------------ */
 p {
-  font-family: Raleway, Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.15rem;
   font-weight: 400; }
 
@@ -34,5 +39,59 @@ p {
 ------------------------------------------------------------------ */
 .alignwide {
   margin-bottom: 1.25rem; }
+
+/* ------------------------------------------------------------------
+## Footer Elements
+------------------------------------------------------------------ */
+#genesis-footer-widgets {
+  color: #101010;
+  background-color: #71BAC0; }
+  #genesis-footer-widgets a :hover {
+    color: #FFDD95; }
+
+a {
+  color: #101010;
+  text-decoration: none; }
+
+/* Center Address Block on Mobile and Left Justify on Desktop */
+.footer-widgets-1 {
+  text-align: center; }
+  @media only screen and (min-width: 1024px) {
+    .footer-widgets-1 {
+      text-align: left; } }
+
+/* Center the PP & TOS */
+.footer-widgets-2 {
+  text-align: center; }
+  .footer-widgets-2 a {
+    font-size: 0.95rem; }
+
+/* Move the Quick Links title to the right */
+.widget-title {
+  text-align: center; }
+  @media only screen and (min-width: 1024px) {
+    .widget-title {
+      text-align: right; } }
+
+/* Move the list items and remove the extra space between items */
+#menu-footer-navigation li {
+  margin-bottom: 0;
+  text-align: center; }
+  #menu-footer-navigation li a {
+    color: #101010;
+    text-decoration: none; }
+  @media only screen and (min-width: 1024px) {
+    #menu-footer-navigation li {
+      text-align: right; } }
+
+footer.site-footer {
+  color: #101010;
+  background-color: #71BAC0;
+  border: none;
+  padding: 20px; }
+  footer.site-footer a :hover {
+    color: #FFDD95; }
+  footer.site-footer p {
+    font-size: 12px; }
 
 /*# sourceMappingURL=custom.css.map */
