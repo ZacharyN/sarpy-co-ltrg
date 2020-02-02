@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="RI Dev">
+    <serverData>
+      <paths name="RI Dev">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/srv/users/republicinsights-dev/apps/republicinsights-dev/public/sarpy-ltrg/wp-content/themes/sarpy-co-ltrg" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
