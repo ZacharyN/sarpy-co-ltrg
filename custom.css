@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:400,400i,700&display=swap");
+html {
+  font-size: 16px; }
+
+.site-header {
+  color: #101010;
+  background-color: #71BAC0; }
+  .site-header a :hover {
+    color: #FFDD95; }
+
+.nav-primary .sub-menu a {
+  color: #101010;
+  background-color: #71BAC0;
+  color: #101010; }
+  .nav-primary .sub-menu a a :hover {
+    color: #FFDD95; }
+
+.genesis-nav-menu a:focus, .genesis-nav-menu a:hover, .genesis-nav-menu .current-menu-item > a, .genesis-nav-menu .sub-menu .current-menu-item > a:focus, .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+  color: #101010;
+  background-color: #71BAC0; }
+  .genesis-nav-menu a:focus a :hover, .genesis-nav-menu a:hover a :hover, .genesis-nav-menu .current-menu-item > a a :hover, .genesis-nav-menu .sub-menu .current-menu-item > a:focus a :hover, .genesis-nav-menu .sub-menu .current-menu-item > a:hover a :hover {
+    color: #FFDD95; }
+
+/* ------------------------------------------------------------------
+## Paragraph Styles
+------------------------------------------------------------------ */
+p {
+  font-family: Raleway, Helvetica, Arial, sans-serif;
+  font-size: 1.15rem;
+  font-weight: 400; }
+
+/* ------------------------------------------------------------------
+## Images
+------------------------------------------------------------------ */
+.alignwide {
+  margin-bottom: 1.25rem; }
+
+/*# sourceMappingURL=custom.css.map */

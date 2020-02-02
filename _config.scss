@@ -1,0 +1,64 @@
+//  + ------------------------------------------------------------------ +
+//  + Here are the fonts                                                 +
+//  + ------------------------------------------------------------------ +
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:400,400i,700&display=swap');
+
+$heading-font     :   'Montserrat', sans-serif;
+$paragraph-font   :   'Open Sans', sans-serif;
+
+html { font-size: 16px }
+
+//  + ------------------------------------------------------------------ +
+//  + Here are the colors                                                +
+//  + ------------------------------------------------------------------ +
+$primary-color    : #71BAC0; // Royal Blue
+$secondary-color  : #6D6E70; // Gold
+
+$font-primary     : #101010; // Dark Grey
+$font-inverse     : $font-primary; // White
+
+$background-light : #FFFFFF; // White
+$background-dark  : $primary-color; // Primary Color from line 14
+
+$link-hover-light : $primary-color;
+$link-hover-dark  : #FFFFFF;
+
+$primary-inverse  : #FFFFFF; // White
+
+$accent-purple    : #7F93CA; // Light Purple
+$accent-orange    : #FFB472; // Light Orange
+$accent-yellow    : #FFDD95; // Light Yellow
+
+
+//  + ------------------------------------------------------------------ +
+//  + Configuring Responsive Breakpoints                                 +
+//  + ------------------------------------------------------------------ +
+
+
+
+
+//  + ------------------------------------------------------------------ +
+//  + Making Z-index pain-free                                           +
+//  + ------------------------------------------------------------------ +
+@function z($name) {
+  @if index($z-indexes, $name) {
+    @return (length($z-indexes) - index($z-indexes, $name)) + 1;
+  } @else {
+    @warn 'There is no item "#{$name}" in this list; choose one of: #{$z-indexes}';
+    @return null;
+  }
+}
+$z-indexes: (
+        "outdated-browser",
+        "modal",
+        "site-header",
+        "page-wrapper",
+        "site-footer"
+);
+// Then where ever you're wanting to use a z-index value, name it the same as your class and add in it into your variables/setting file, like below. You'll never have a "z-index: 99999999;" headache again.
+//
+//      .site-header {
+//         z-index: z('site-header');
+//      };
+
+

@@ -1,0 +1,73 @@
+
+//  + ------------------------------------------------------------------ +
+//  + Font Headings Mixin                                                +
+//  + ------------------------------------------------------------------ +
+@mixin headings {
+  font-family: $heading-font;
+  color: $primary-color;
+  font-weight: 600;
+};
+
+//  + ------------------------------------------------------------------ +
+//  + Background Color Settings                                          +
+//  + ------------------------------------------------------------------ +
+@mixin light-background {
+  color: $font-primary;
+  background-color: $background-light;
+  a :hover {
+    color: $link-hover-light;
+  }
+}
+
+@mixin dark-background {
+  color: $font-inverse;
+  background-color: $background-dark;
+  a :hover {
+    color: $accent-yellow;
+  }
+}
+
+@mixin nav-background-selector {
+  @include dark-background;
+}
+
+//  + ------------------------------------------------------------------ +
+//  + Media Query Break Points Mixin                                     +
+//  + ------------------------------------------------------------------ +
+$breakpoints: (
+        "phone":        400px,
+        "phone-wide":   480px,
+        "phablet":      560px,
+        "tablet-small": 640px,
+        "tablet":       768px,
+        "tablet-wide":  1024px,
+        "desktop":      1248px,
+        "desktop-wide": 1440px
+);
+
+@mixin mq($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @if $type == max {
+      $width: $width - 1px;
+    }
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}
+// Using the mixin:
+// The example below showing the padding and font-size
+// increasing once the viewport gets over 1024px.
+
+     //   .site-header {
+     //      padding: 2rem;
+     //      font-size: 1.8rem;
+     //      @include mq('tablet-wide') {
+     //         padding-top: 4rem;
+     //         font-size: 2.4rem;
+     //       }
+     //     }
+
+
+

@@ -1,0 +1,12 @@
+.site-header {
+  @include nav-background-selector;
+}
+
+.nav-primary .sub-menu a {
+  @include nav-background-selector;
+  color: $font-primary;
+}
+
+.genesis-nav-menu a:focus, .genesis-nav-menu a:hover, .genesis-nav-menu .current-menu-item > a, .genesis-nav-menu .sub-menu .current-menu-item > a:focus, .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+  @include nav-background-selector;
+}
