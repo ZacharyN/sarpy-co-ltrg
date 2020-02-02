@@ -11,6 +11,7 @@ p {
 //  + Link Styles                                                        +
 //  + ------------------------------------------------------------------ +
 
-a {
+body a {
   color: $link-primary;
+  text-decoration: underline;
 }

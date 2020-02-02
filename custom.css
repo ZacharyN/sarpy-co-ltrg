@@ -31,8 +31,9 @@ p {
   color: #101010;
   font-size: 1rem; }
 
-a {
-  color: #FFB472; }
+body a {
+  color: #7F93CA;
+  text-decoration: underline; }
 
 /* ------------------------------------------------------------------
 ## Images
@@ -56,6 +57,9 @@ a {
 /* Center Address Block on Mobile and Left Justify on Desktop */
 .footer-widgets-1 {
   text-align: center; }
+  .footer-widgets-1 a {
+    color: #101010;
+    text-decoration: none; }
   @media only screen and (min-width: 1024px) {
     .footer-widgets-1 {
       text-align: left; } }
@@ -64,7 +68,9 @@ a {
 .footer-widgets-2 {
   text-align: center; }
   .footer-widgets-2 a {
-    font-size: 0.95rem; }
+    font-size: 0.95rem;
+    color: #101010;
+    text-decoration: none; }
 
 /* Move the Quick Links title to the right */
 .widget-title {

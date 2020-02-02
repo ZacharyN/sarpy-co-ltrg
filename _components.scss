@@ -19,6 +19,9 @@
 /* Center Address Block on Mobile and Left Justify on Desktop */
 .footer-widgets-1 {
   text-align: center;
+  a {
+    @include regular-links;
+  }
   @include mq('tablet-wide') {
     text-align: left;
   }
@@ -29,6 +32,7 @@
   text-align: center;
   a {
     font-size: 0.95rem;
+    @include regular-links;
   }
 }
 
